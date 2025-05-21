@@ -35,7 +35,7 @@ h1 {
 }
 
 .tab-button:hover {
-  transform: translate(0);
+  transform: translateY(-5px);
 }
 
 .tab-selected {
@@ -62,6 +62,15 @@ hr {
   flex-direction: column;
   gap: 0.5rem;
   border: none;
+}
+
+.todo-item {
+  border: none;
+  transition: border-color 0.6s cubic-bezier(0.4, 0, 0.2, 1); /* 0.6s for a lingering effect */
+}
+
+.todo-item:hover {
+  border-color: var(--color-link);
 }
 
 .todo-complete {
